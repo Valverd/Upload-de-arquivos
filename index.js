@@ -10,6 +10,8 @@ app.set('view engine', 'ejs');
 
 app.use("/", router);
 
+app.use(express.static(path.join(__dirname, "public")));
+
 
 app.listen(PORT, () => {
     console.log(`Running on PORT ${PORT}`);
