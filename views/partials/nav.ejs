@@ -14,14 +14,22 @@
     .navbar{
         margin: auto;
         width: 70%;
-        padding: 20px;
+        height: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .nav-img .nav-vid .nav-file{
-        background-color: lightgrey;
+    .nav-img, .nav-vid, .nav-file{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-img:hover, .nav-vid:hover, .nav-file:hover{
+        background-color: rgb(90, 192, 90);
     }
 
 </style>
@@ -29,9 +37,9 @@
 <header>
 
     <nav class="navbar">
-        <div class="nav-img">Imagens</div>
-        <div class="nav-vid">Videos</div>
-        <div class="nav-file">Arquivos</div>
+        <div id="navImg" class="nav-img">Imagens</div>
+        <div id="navVid" class="nav-vid">Videos</div>
+        <div id="navFile" class="nav-file">Arquivos</div>
     </nav>
 
 </header>
